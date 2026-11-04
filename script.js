@@ -8,9 +8,11 @@
     });
   });
   function close(){ if(lb.close){lb.close()}else{lb.removeAttribute('open')} img.removeAttribute('src'); }
-  lb.addEventListener('click',close);
-  lb.querySelector('.lb-close').addEventListener('click',close);
-  lb.addEventListener('close',function(){img.removeAttribute('src')});
+  if(lb){
+    lb.addEventListener('click',close);
+    lb.querySelector('.lb-close').addEventListener('click',close);
+    lb.addEventListener('close',function(){img.removeAttribute('src')});
+  }
   var y=document.getElementById('yr'); if(y){y.textContent=new Date().getFullYear()}
   // sticky WhatsApp: hide while the hero button or contact card is already on screen
   var fab=document.querySelector('.fab'),vis={};
