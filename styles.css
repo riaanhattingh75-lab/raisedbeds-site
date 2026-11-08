@@ -84,6 +84,21 @@ p{margin:0 0 1em}
 .prices td.price{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:var(--green-d)}
 .prices tbody tr:last-child th,.prices tbody tr:last-child td{border-bottom:0}
 .prices tbody tr:nth-child(even){background:#faf9f6}
+.prices tbody tr.bundle,
+.prices tbody tr.bundle th,
+.prices tbody tr.bundle td{background:#fff4e4}
+.price-sub{display:block;font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.01em;color:var(--accent-d);line-height:1.25;margin-top:3px;white-space:normal}
+
+/* Black Friday bundle */
+.offer-top{background:var(--c2);border-bottom:1px solid var(--c3);padding:14px 0}
+.offer-card{background:#fff;border-radius:var(--r);border-left:6px solid var(--accent);box-shadow:var(--shadow);padding:16px 16px 18px;display:grid;gap:8px}
+.offer-kicker{margin:0;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d)}
+.offer-title{margin:0;font-family:var(--serif);font-size:clamp(1.45rem,4.4vw,2rem);line-height:1.15;color:var(--green-d);font-weight:700}
+.offer-title span{color:var(--accent-d)}
+.offer-detail{margin:0;color:#3d4640;font-size:1rem;max-width:40em}
+.offer-card .btn{width:100%;margin-top:4px}
+.offer-note{margin:18px 0 0;background:#fff;border-left:5px solid var(--accent);border-radius:12px;padding:14px 18px}
+.offer-note p{margin:0;color:#3d4640}
 .ask{display:inline-block;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:8px 16px;border-radius:999px}
 .ask:hover{background:var(--wa-d)}
 .prices td:nth-child(2){display:none}
@@ -152,6 +167,11 @@ details p{color:#3d4640;margin:0 0 18px}
 .fab::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(31,168,85,.6);animation:pulse 2.6s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 14px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
 
+@media (min-width:700px){
+  .offer-card{grid-template-columns:1fr auto;column-gap:28px;align-items:center;padding:18px 22px}
+  .offer-kicker,.offer-title,.offer-detail{grid-column:1}
+  .offer-card .btn{grid-column:2;grid-row:1 / span 3;width:auto;margin-top:0;white-space:nowrap}
+}
 @media (min-width:600px){
   .strip-list{grid-template-columns:repeat(4,1fr)}
   .cta-row{flex-direction:row}
