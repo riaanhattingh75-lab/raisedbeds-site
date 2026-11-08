@@ -127,6 +127,19 @@ dialog#lb::backdrop{background:rgba(10,20,15,.92)}
 #lbImg{max-width:96vw;max-height:92vh;object-fit:contain;border-radius:10px;width:auto;height:auto}
 .lb-close{position:fixed;top:14px;right:14px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;font-size:30px;line-height:1;cursor:pointer;z-index:3}
 
+/* before / after */
+.ba{display:grid;gap:16px;margin-top:26px}
+.ba-after{display:grid;gap:12px;max-width:560px}
+.ba-card{margin:0;position:relative}
+.ba-card:not(:has(img)){display:none}
+.ba-card .g{aspect-ratio:auto;height:auto}
+.ba-card .g img{height:auto;object-fit:contain}
+.ba-label{position:absolute;z-index:2;top:12px;left:12px;margin:0;background:var(--green-d);color:#fff;font-style:normal;font-weight:800;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(20,53,38,.25)}
+@media (min-width:700px){
+  .ba:has(> .ba-card img){grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+  .ba:has(> .ba-card img) .ba-after{max-width:none}
+}
+
 /* areas */
 .areas{list-style:none;padding:0;margin:22px 0 14px;display:flex;flex-wrap:wrap;gap:10px}
 .areas li{background:#fff;border:1px solid var(--c3);padding:9px 16px;border-radius:999px;font-weight:600;color:var(--green-d)}
