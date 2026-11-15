@@ -174,6 +174,10 @@ details p{color:#3d4640;margin:0 0 18px}
 .foot-wa:hover{background:var(--wa-d)}
 .foot b{color:#fff;font-family:var(--serif);font-size:1.15rem}
 .copy{margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:.82rem;opacity:.8}
+.other-sites{margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15)}
+.other-sites b{display:block}
+.other-sites-list{display:flex;flex-wrap:wrap;gap:8px 28px}
+.other-sites + .copy{margin-top:16px;padding-top:0;border-top:none}
 
 /* sticky whatsapp */
 .fab{transition:opacity .25s,transform .25s;position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:60;background:var(--wa);color:#fff;text-decoration:none;font-weight:800;display:flex;align-items:center;gap:8px;padding:0 20px 0 16px;height:56px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
