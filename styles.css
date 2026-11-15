@@ -246,3 +246,8 @@ details p{color:#3d4640;margin:0 0 18px}
   .prose-section{padding:72px 0}
 }
 .fab.hide{opacity:0;transform:translateY(20px);pointer-events:none}
+/* round concrete table listing */
+.table-photos img{object-position:50% 36%}
+.table-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 8px}
+.table-gallery img{border-radius:var(--r);box-shadow:var(--shadow);width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 36%}
+.page-hero-photo.table-hero img{object-position:50% 36%}
