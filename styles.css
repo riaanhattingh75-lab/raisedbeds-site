@@ -115,6 +115,10 @@ p{margin:0 0 1em}
 .chips span{color:#4a524d;font-size:.95rem}
 .dark p{color:#e3ebe5}
 
+/* mid-page scenic band */
+.scenic-band{margin:0;padding:0;line-height:0;background:#1a1814}
+.scenic-band img{width:100%;height:auto;display:block}
+
 /* gallery */
 .gallery{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .g{display:block;width:100%;padding:0;border:0;background:var(--c2);border-radius:14px;overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:4/5}
