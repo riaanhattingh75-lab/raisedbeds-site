@@ -74,6 +74,10 @@ p{margin:0 0 1em}
 .photo-pair img{border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:3/4;object-fit:cover;width:100%}
 .photo-pair img:nth-child(2){margin-top:28px}
 
+/* Play Box (landscape product photo) */
+.playbox-photo{margin:0}
+.playbox-photo img{width:100%;height:auto;border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;display:block}
+
 /* prices */
 .table-wrap{margin-top:26px;background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
 .prices{width:100%;border-collapse:collapse}
