@@ -119,6 +119,17 @@ p{margin:0 0 1em}
 .chips span{color:#4a524d;font-size:.95rem}
 .dark p{color:#e3ebe5}
 
+
+/* family feature under the hero */
+.section.family-feature{padding-top:48px;padding-bottom:48px}
+.family-feature-in{display:flex;flex-direction:column;align-items:center;text-align:center}
+.family-feature-photo{margin:0;max-width:560px;width:100%}
+.family-feature-photo .g{aspect-ratio:3/4;border-radius:var(--r);box-shadow:var(--shadow)}
+.family-feature-photo .g img{object-position:50% 42%}
+.family-feature-photo figcaption{font-family:var(--serif);font-size:clamp(1.15rem,3.2vw,1.5rem);color:var(--green-d);margin:16px 8px 0;line-height:1.35;font-weight:600}
+.g-wide{grid-column:span 2;aspect-ratio:16/10}
+.g-wide img{object-position:50% 55%}
+
 /* mid-page scenic band */
 .scenic-band{margin:0;padding:0;line-height:0;background:#1a1814}
 .scenic-band img{width:100%;height:auto;display:block}
@@ -222,6 +233,8 @@ details p{color:#3d4640;margin:0 0 18px}
   .contact-card{grid-template-columns:1.2fr 1fr;align-items:center;padding:56px}
   .foot{grid-template-columns:1.5fr 1fr 1fr}
   .fab{right:24px;bottom:24px}
+  .section.family-feature{padding-top:72px;padding-bottom:72px}
+  .family-feature-photo{max-width:620px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
